@@ -65,15 +65,38 @@ s = s.split(':')
 print(s)
 
 # 8번
-
-
+a = (1, 2, 3)
+a = a + (4,)
+print(a)
 
 # 9번
-
-
+a = dict() # 빈 딕셔너리
+print(a)
+a['name'] = 'python'
+print(a)
+a[('a')] = 'python'
+print(a)
+#a[[1]] = 'python'
+#print(a)
+a[250] = 'python'
+print(a)
 
 # 10번
+a = {'A':90, 'B':80, 'C':70}
+result = a.pop('B')
+print(a)
+print(result)
 
+# 11번
+a = [1, 1, 1, 2, 2, 3, 3, 3 ,4, 4, 5]
+aSet = set(a) # 중복 제거
+b = list(aSet) # list형으로 변환
+print(b)
+
+# 12번
+a = b = [1, 2, 3]
+a[1] = 4
+print(b)
 
 
 

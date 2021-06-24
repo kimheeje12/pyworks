@@ -40,11 +40,20 @@ for i in range(1, 101):
 A = [70, 60, 55, 75, 95, 90 ,80, 80, 85, 100]
 total = 0
 for score in A:
-    total += A[:]
-avg = total
-
+    total += score
+    
+average = total / len(A)
+print(average)
 
 # 6번
+numbers = [1, 2, 3, 4, 5]
+result = []
+for n in numbers:
+    if n % 2 == 1:
+        result.append(n*2)
 
+numbers = [1, 2, 3, 4, 5]
+result = [n*2 for n in numbers if n % 2 == 1]
+print(result)
 
 
