@@ -1,6 +1,6 @@
 import time
 
-print(time.time()) # 1970년 1월 1일 자정 이후를 초로 환산
+print(ch06.module.time()) # 1970년 1월 1일 자정 이후를 초로 환산
 print(time.localtime())
 print(time.ctime()) # 날짜와 시간 요일 표시
 

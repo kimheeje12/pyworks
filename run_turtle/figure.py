@@ -24,3 +24,6 @@ t.left(120)
 
 # 원
 t.circle(50)
+
+t.mainloop()
+
