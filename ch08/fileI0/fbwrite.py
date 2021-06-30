@@ -9,4 +9,3 @@ with open('data.bin', 'rb') as f:
     text = data.decode()
     print(text)
 
-    
