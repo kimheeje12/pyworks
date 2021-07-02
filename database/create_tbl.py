@@ -11,13 +11,14 @@ def create_table():
     # 테이블 생성 - sql 언어 DDL
     sql = """
         create table member(
+            mem_num int primary key, 
             name char(20),
             age int
         )
     """
     cur.execute(sql)
 
-    conn.commit() # 트랜잭션 완료(수행)
+    conn.commit() # 커밋 - 트랜잭션 완료(수행)
     conn.close() # 네트워크 종료
 
 if __name__ == "__main__":

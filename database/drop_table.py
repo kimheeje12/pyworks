@@ -1,14 +1,13 @@
-# 특정자료 삭제
 from libs.db.dbconn import getconn
 
-def delete_data():
+def drop_table():
     conn = getconn()
     cur = conn.cursor()
-    sql = "delete from member where mem_num = 103"
+    # 테이블 삭제 - SQL DDL(데이터 정의어)
+    sql = "drop table member"
     cur.execute(sql)
-
     conn.commit()
     conn.close()
 
 if __name__ == "__main__":
-    delete_data()
+    drop_table()

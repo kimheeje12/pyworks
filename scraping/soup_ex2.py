@@ -19,8 +19,12 @@ html_str="""
 </html>
 """
 
-soup = BeautifulSoup(html_str, 'html.parser')
-#print(soup)
-ul = soup.find('ul') # find() 는 맨 처음 나오는 태그만 검색
-print(ul)
-print(ul.text) # 태크 빼고 검색
+contents = BeautifulSoup(html_str, 'html.parser')
+ul = contents.find('ul', {'class':'lang'})
+# print(ul)
+# li = contents.findAll('li')
+# print(li)
+# 중국어 검색 방법
+lis = ul.find_all('li')
+#print(lis)
+print(lis[1].text)
