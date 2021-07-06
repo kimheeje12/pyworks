@@ -38,6 +38,8 @@ print(cal2.value)
 '''
 
 # 3번(shell에서 체크)
+import datetime
+
 '''
 # 4번
 def postitive(a):
@@ -64,3 +66,53 @@ li = [1, 2, 3, 4]
 
 print(list(map(lambda x : x*3, li)))
 
+# 7번
+def find_max(li):
+    max = li[0]
+    for i in li:
+        if max < i:
+            max = i
+    return(max)
+
+    '''
+    n = len(li)
+    for i in range(1, n):
+        print(max)
+        if max < li[i]:
+            max = li[i]
+    '''
+    return(max)
+
+# max값 구하기
+d1 = [-8, 2, 7, 5, -3, 5, 0, 1]
+max = max(d1)
+min = min(d1)
+print(max)
+print(min)
+print(max+max)
+print(min+min)
+
+# 8번
+# console
+# round(17/3, 4)
+# 내림은 import math, math.floor(17/3)
+
+# 9번
+# myargv
+
+# 10번
+# os
+
+# 11번
+# glob
+
+# 12번
+# time 모듈 사용
+import time
+now1 = datetime.datetime.now()
+print(now1.strftime("%Y/%m/%d %H:%M:%S"))
+
+now2 = time.strftime("%Y/%m/%d %H:%M:%S")
+print(now2)
+
+# 13번
